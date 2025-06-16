@@ -1,0 +1,17 @@
+换到torch2.1.0+cuda121了
+pip install flash-attn==2.1.0 --no-build-isolation
+
+pip install bleach
+
+train(finetune on lisa)
+pip install tensorboard deepspeed scikit-image
+
+https://github.com/dvlab-research/LISA/issues/85
+
+手动保存lisa的sam decoder. 还有个fcs 这个在training里没有赋值 手动加载一次。
+# torch.save(model.model.visual_model.state_dict(), "Lisa_tuned_SAM.bin")
+# torch.save(model.model.text_hidden_fcs.state_dict(), "Lisa_tuned_fcs.bin")
+
+
+apt install libaio-dev
+
