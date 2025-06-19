@@ -1,10 +1,13 @@
 ## 在自己数据集上微调 LISA
 
-有任何问题可以提issue！
+有任何问题可以提issue
 
 ### env (在原来lisa的环境基础上)
+
 torch2.1.0+cuda121
+
 pip install flash-attn==2.1.0 --no-build-isolation
+
 pip install bleach
 
 pip install tensorboard deepspeed scikit-image
